@@ -1,4 +1,5 @@
-(()=>{
+import DeleteButton from "./components/deleteTask.js";
+import concludeButton from "./components/concludeTask.js";
 const createTask = (event) =>{
     //preventDefault() will clear the default form config that is passed as a parameter; 
     event.preventDefault();
@@ -20,6 +21,7 @@ const createTask = (event) =>{
         task.innerHTML = content;
         
         task.appendChild(concludeButton());
+        task.appendChild(DeleteButton());
         //appendChild will add task content to html as a tag
         list.appendChild(task);
         }
@@ -27,23 +29,4 @@ const createTask = (event) =>{
 
     const newTask = document.querySelector('[data-form-button]');
     newTask.addEventListener('click', createTask);
-
-    const concludeButton = () => {
-    const concludeButton = document.createElement('button');
-
-    concludeButton.classList.add('check-button');
-    concludeButton.innerText = '✓';
-    concludeButton.addEventListener('click', concludeTask);
-
-    return concludeButton;
-    }
-
-    const concludeTask = (event) =>{
-        const concludeButton = event.target;
-
-        const completeTask = concludeButton.parentElement;
-
-        completeTask.classList.toggle('done');
-    }
-})();
 

@@ -119,19 +119,24 @@ body {
 .task {
   background-color: rgba(255, 255, 255, 0.1);
   color: #F6F1D1;
-  display: flex;
+  display: block;
   justify-content: space-between;
   margin-bottom: 0.5rem;
   padding: 1rem 3rem;
 }
 
 .check-button, .delete-button {
-  background-color: #F6F1D1;
+  background-color: #78dd8e;
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   outline: none;
-  border-radius: 2px;
+  border-radius: 15px;
   cursor: pointer;
+  margin-right: 10px;
+}
+
+.delete-button{
+  background-color: rgb(223, 111, 111);
 }
 
 .task.done .check-button {
