@@ -6,6 +6,10 @@ const createTask = (event) =>{
     const list = document.querySelector('[data-list]');
     const input = document.querySelector('[data-form-input]');
     const value = input.value;
+
+    const calendar = document.querySelector('[data-form-date]');
+    const date = calendar.value;
+    
     console.log(value);
     input.value = "";
 
