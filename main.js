@@ -8,8 +8,9 @@ const createTask = (event) =>{
     const value = input.value;
 
     const calendar = document.querySelector('[data-form-date]');
-    const date = calendar.value;
+    const date = moment(calendar.value);
     
+    console.log(date.format('DD/MM/YYYY'));
     console.log(value);
     input.value = "";
 

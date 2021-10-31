@@ -43,6 +43,13 @@ body {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+.form-date-input{
+  margin-left: 4px;
+  background-color: #F6F1D1;
+  border: none;
+  
+}
+
 .form-button {
   border: 1px;
   background: #F6F1D1;
