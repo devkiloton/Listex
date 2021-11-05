@@ -25,6 +25,7 @@ const handleNewItem = (event) => {
 
     if(inputValue != "" && formattedDate != 'Invalid date')
     {
+    localStorage.setItem('task', JSON.stringify(data))
      //appendChild will add task content to html as a tag
      list.appendChild(creatingTask);
     }
